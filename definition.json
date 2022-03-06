@@ -1,0 +1,64 @@
+{
+  "icon": "./assets/candlestick-icon.png",
+  "name": "incorta-candlestick-chart",
+  "hint": "Display a candlestick chart",
+  "options": {
+    "aggregation": true,
+    "individualFilter": true,
+    "aggregateFilter": true
+  },
+  "settings": [
+    {
+      "name": {
+        "key": "Configuration"
+      },
+      "settings": [
+        {
+          "name": {
+            "key": "Scale"
+          },
+          "key": "scale",
+          "defaultValue": 20,
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "bindingsTrays": [
+    {
+      "key": "timestamp",
+      "name": "Timestamp",
+      "queryRole": "row",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "key": "close",
+      "name": "Close",
+      "queryRole": "row",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "key": "open",
+      "name": "Open",
+      "queryRole": "row",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "key": "high",
+      "name": "High",
+      "queryRole": "measure",
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "key": "low",
+      "name": "Low",
+      "queryRole": "measure",
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ]
+}
