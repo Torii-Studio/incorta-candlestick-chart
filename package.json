@@ -1,7 +1,7 @@
 {
   "id": "8212b729-2dfb-415f-9491-2e534e1b7e9f",
   "version": "0.0.1",
-  "name": "incorta-candlestick-chart",
+  "name": "candlestick-chart",
   "description": "Display a candlestick chart",
   "author": {
     "name": "Torii Studio",
@@ -60,9 +60,7 @@
     "react-scripts": "4.0.3",
     "typescript": "^4.1.3"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "dependencies": {
     "@incorta-org/component-sdk": "^0.0.1-alpha.3",
     "react": "^17.0.2",

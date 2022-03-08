@@ -1,6 +1,6 @@
 {
   "icon": "./assets/candlestick-icon.png",
-  "name": "incorta-candlestick-chart",
+  "name": "candlestick-chart",
   "hint": "Display a candlestick chart",
   "options": {
     "aggregation": true,
@@ -15,11 +15,11 @@
       "settings": [
         {
           "name": {
-            "key": "Scale"
+            "key": "Scale Y-Axis"
           },
           "key": "scale",
-          "defaultValue": 20,
-          "type": "number"
+          "defaultValue": true,
+          "type": "boolean"
         }
       ]
     }
@@ -35,14 +35,14 @@
     {
       "key": "close",
       "name": "Close",
-      "queryRole": "row",
+      "queryRole": "measure",
       "minCount": 1,
       "maxCount": 1
     },
     {
       "key": "open",
       "name": "Open",
-      "queryRole": "row",
+      "queryRole": "measure",
       "minCount": 1,
       "maxCount": 1
     },
